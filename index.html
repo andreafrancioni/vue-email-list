@@ -17,7 +17,12 @@
 </head>
 <body>
     <div id="app">
-       
+       <ul>
+        <li v-for="item in userMail">
+            {{item}}
+        </li>
+       </ul>
+       <button @click="generaMail()">Genera Mail</button>
     </div>
     
     <!-- JS -->
